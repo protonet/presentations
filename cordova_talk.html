@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Your deck.js Presentation</title>
+  <title>Hybride Apps mit Cordova</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" media="screen" href="core/deck.core.css">
@@ -25,9 +25,12 @@
 
   <!-- Basic black and white print styles -->
   <link rel="stylesheet" media="print" href="core/print.css">
+  <link rel="stylesheet" media="screen" href="prettify.css">
 
   <!-- Required Modernizr file -->
   <script src="modernizr.custom.js"></script>
+  <script src="run_prettify.js"></script>
+  
 </head>
 <body>
   <div class="deck-container">
@@ -67,6 +70,332 @@
     <section class="slide">
       <h2>Protonet - Maya</h2>
       <img src="themes/images/maya.jpg">
+    </section>
+
+    <section class="slide">
+      <h2>Warum hybride Apps?</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Was ist eine hybride App?</h2>
+      <ul>
+        <li>Rahmen: Nativ (Java, Objective C)</li>
+        <li>Inhalt: HTML5, CSS, JavaScript</li>
+        <li>Über JavaScript können Hardware-Komponenten (Kamera, GPS , ...) angesteuert werden</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Vorurteile</h2>
+      
+      <blockquote>
+        <p>„The biggest mistake we’ve made as a company is betting on HTML5 over native.“</p>
+        <p><cite>Mark Zuckerberg, 2012</cite></p>
+      </blockquote>
+      <img src="themes/images/zuckerberg.jpg">
+    </section>
+
+    <section class="slide">
+      <h2>State of the Art - 2012</h2>
+      
+      <h3>iPhone 4s und iOS 5</h3>
+      <ul>
+        <li>Browser auf dem Stand von Safari 5</li>
+      </ul>
+      
+      <h3>Android 4.0</h3>
+      <ul>
+        <li>Browser auf dem Stand von Safari 4 oder Chrome 12</li>
+        <li>DOM Performance schlecht</li>
+        <li>Viele Bugs</li>
+        <li>Kaum CSS3-Support</li>
+        <li>CSS-Transitions ruckeln</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>State of the Art - 2014</h2>
+      
+      <h3>iPhone 6 und iOS 8</h3>
+      <ul>
+        <li>Browser auf dem Stand von Safari 8</li>
+      </ul>
+      
+      <h3>Android 4.4</h3>
+      <ul>
+        <li>Browser auf dem Stand von Chrome 33</li>
+        <li>Hardware Acceleration</li>
+      </ul>
+    </section>
+
+
+    <section class="slide">
+      <h2>Moore's Law</h2>
+      
+      <p>Nach Moore's Law verdoppelt sich die Rechenleistung von Prozessoren etwa alle 18 Monate.</p>
+      
+      <img src="themes/images/moore.jpg">
+    </section>
+
+    <section class="slide">
+      <h2>iPhone Sunspider Benchmark</h2>
+      
+      <script id="infogram_0_iphone-sunspider-benchmark" src="http://e.infogr.am/js/embed.js" type="text/javascript"></script>
+
+      <span class="source">Quellen: geekaphone.com</span>
+    </section>
+
+    <section class="slide">
+      <h2>Samsung Galaxy Sunspider Benchmark</h2>
+      
+      <script id="infogram_0_samsung-galaxy-sunspider-test" src="http://e.infogr.am/js/embed.js" type="text/javascript"></script>
+      
+      <span class="source">Quellen: geekaphone.com</span>
+    </section>
+
+    <section class="slide">
+      <h2>Wann macht's Spaß?</h2>
+
+      <h3>Mindestens Android 4.4</h3>
+      <ul>
+        <li>25% aller Androids weltweit (in Deutschland mehr)</li>
+        <li>Nexus 4, Moto G, Galaxy S4, ...</li>
+      </ul>
+      <h3>Mindestens iPhone 5</h3>
+      <ul>
+        <li>75% aller weltweit aktiven iPhone's</li>
+        <li>iOS 7+</li>
+      </ul>
+
+      <span class="source">Quellen: Statista, Mixtrend</span>
+    </section>
+
+    <section class="slide">
+      <h2>Vorteile Hybrid</h2>
+
+      <ul>
+        <li>Niedrige Entwicklungskosten</li>
+        <li>Eine Code-Basis</li>
+        <li>Bestehende Patterns können wiederverwendet werden</li>
+        <li>Web-Standards (WebSockets, WebRTC, LocalStorage, IndexedDB, ...)</li>
+        <li>Kein Java <span class="poo"></span></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Nachteile Hybrid</h2>
+
+      <ul>
+        <li>Keine native Performance</li>
+        <li>Weniger Möglichkeiten als bei nativen Apps</li>
+        <li>Keine UI-Elemente aus dem Betriebssystem</li>
+        <li>Keine Unterstützung für Smartwatches</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Fazit</h2>
+      
+      <p>Hybrid ist mittlerweile <strong>gut genug</strong> und eine echte Alternative für Unternehmen mit kleinem Budget.</p>
+      <img src="themes/images/hybrid_plane.jpg">
+    </section>
+    
+    <section class="slide">
+      <h1>Cordova</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>Was ist Cordova?</h2>
+      
+      <ul>
+        <li>Hybrides Framework</li>
+        <li>Open Source</li>
+        <li>Android, iOS, Amazon Fire OS, Blackberry, Firefox OS, Ubuntu, Windows Phone, Tizen</li>
+        <li>Phonegap basiert auf Cordova</li>
+        <li>Verwendet von BBC, Zynga, Facebook, Twitter, ...</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Voraussetzungen</h2>
+      
+      <ul>
+        <li>XCode auf Mac für iOS-Entwicklung</li>
+        <li>Android SDK für Android-Entwicklung</li>
+      </ul>
+    </section>
+
+
+    <section class="slide">
+      <h2>Erste Schritte</h2>
+      
+      <h3>1. Setup:</h3>
+      <pre class="prettyprint lang-bash"><code>$ sudo npm install -g cordova
+$ cordova create hello com.example.hello HelloWorld
+$ cd hello
+$ cordova platform add ios
+$ cordova platform add android</code></pre>
+    </section>
+
+    <section class="slide">
+      <h2>Erste Schritte</h2>
+
+      <h3>2. HTML / CSS / Javascript:</h3>
+      <pre class="prettyprint lang-html"><code>&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;cordova.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/app.js&quot;&gt;&lt;/script&gt;</code></pre>
+    </section>
+
+    <section class="slide">
+      <h2>Erste Schritte</h2>
+  
+      <h3>3. Auf Gerät testen:</h3>
+      <pre class="prettyprint lang-bash"><code>$ cordova run android
+$ cordova run ios</code></pre>
+    </section>
+
+    <section class="slide">
+      <h2>Cordova Plugins</h2>
+
+      <ul>
+        <li>Schnittstellen zur Hardware und nativen Komponenten</li>
+        <li>Einfache JavaScript API</li>
+        <li>Über 400 Plugins</li>
+        <li><a href="http://plugins.cordova.io/">plugins.cordova.io</a></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>How to take a selfie</h2>
+      
+      <h3>Installieren:</h3>
+      <pre class="prettyprint lang-bash"><code>$ cordova plugin add org.apache.cordova.camera</code></pre>
+      
+      <h3>Verwenden:</h3>
+      <pre class="prettyprint lang-javascript"><code>navigator.camera.getPicture(
+  successCallback,
+  failureCallback,
+  {
+    cameraDirection: Camera.Direction.FRONT,
+    quality: 75
+  }
+);</code></pre>
+    </section>
+
+    <section class="slide">
+      <h2>How to take a selfie</h2>
+      <img src="themes/images/selfie.jpg">
+    </section>
+
+    <section class="slide">
+      <h2>GPS-Signal</h2>
+  
+      <h3>Installieren:</h3>
+      <pre class="prettyprint lang-bash"><code>$ cordova plugin add org.apache.cordova.geolocation</code></pre>
+  
+      <h3>Verwenden:</h3>
+      <pre class="prettyprint lang-javascript"><code>navigator.geolocation.getCurrentPosition(function(position) {
+  var coords = position.coords;
+  console.log(coords.latitude, coords.longitude, coords.speed);
+});</code></pre>
+    </section>
+
+    <section class="slide">
+      <h2>GPS-Signal</h2>
+      <img src="themes/images/gps.jpg">
+    </section>
+    
+    <section class="slide">
+      <h2>Weitere Plugins</h2>
+
+      <ul>
+        <li>
+          Push Notifications -
+          <a href="https://github.com/phonegap-build/PushPlugin" target="_blank">com.phonegap.plugins.PushPlugin</a>
+        </li>
+        <li>
+          Datei-Zugriff -
+          <a href="https://github.com/apache/cordova-plugin-file/blob/master/doc/index.md" target="_blank">org.apache.cordova.file</a>
+        </li>
+        <li>
+          Adressbuch -
+          <a href="https://github.com/apache/cordova-plugin-contacts/blob/master/doc/index.md" target="_blank">org.apache.cordova.contacts</a></li>
+        <li>... und viele mehr</li>
+      </ul>
+    </section>
+
+
+    <section class="slide">
+      <h2>Nützliche JavaScript Libraries</h2>
+
+      <ul>
+        <li>
+          <a href="https://github.com/ftlabs/fastclick" target="_blank">Fastclick</a>
+          - Ein Muss für iOS</li>
+        <li>
+          <a href="http://ionicframework.com/" target="_blank">Ionic</a>
+          - Frontend Framework basierend auf AngularJS
+        </li>
+        <li>
+          <a href="https://github.com/chrisben/imgcache.js" target="_blank">imgcache</a>
+          - Cached externe Grafiken auf dem Telefon
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Performance Tipps</h2>
+
+      <ul>
+        <li>Statische Assets mit der App ausliefern</li>
+        <li>CSS3 Animationen</li>
+        <li>Sparsam mit Dom-Elementen umgehen</li>
+        <li>JavaScript-Operationen unterbrechen wenn App im Hintergrund</li>
+        <li>jQuery 2.1 statt jQuery 1.11</li>
+        <li>GZIP / SPDY für externe Resourcen</li>
+        <li>Instant Touch Feedback (-webkit-tap-highlight-color)</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Entwicklungs-Tools</h2>
+
+      <ul>
+        <li>
+          <a href="http://emulate.phonegap.com/" target="_blank">Ripple</a>
+          - Simuliert Cordova im Chrome</li>
+        <li>
+          XCode-Simulatoren (Vorsicht: Keine native Performance)
+        </li>
+        <li>
+          Simulatoren in der Android SDK sind unbrauchbar
+        <li>
+          Stattdessen: <a href="http://www.genymotion.com/" target="_blank">Genymotion</a>
+          - Emulatoren basierend auf VirtualBox
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Bonus-Material</h2>
+
+      <h4><a href="https://crosswalk-project.org/" target="_blank">Crosswalk</a></h4>
+      <p>Chrome WebView für alle Android Versionen</p>
+
+      <h4><a href="http://selendroid.io/" target="_blank">Selendroid</a></h4>
+      <p>Test-Framework für Android</p>
+
+      <h4><a href="http://ios-driver.github.io/ios-driver/" target="_blank">ios-driver</a></h4>
+      <p>iOS-Driver für Selenium</p>
+      
+      <h4><a href="http://pushwoosh.com" target="_blank">PushWoosh</a></h4>
+      <p>Push-Service mit Cordova-Support</p>
+    </section>
+    
+    <section class="slide">
+      <h2>Danke! Fragen?</h2>
+
+      <p>Die Präsentation gibt es im Internet unter: <a href="http://bit.do/codetalks-cordova" target="_blank">http://bit.do/codetalks-cordova</a></p>
     </section>
     <!-- End slides. -->
 
