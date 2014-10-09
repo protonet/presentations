@@ -251,17 +251,17 @@ li {
   font-weight: bold; }
 
 h1 {
-  color: #000;
+  color: #333;
   font-weight: 100; }
 
 h2 {
-  color: #c00;
+  color: #333;
   border-bottom-color: #ccc;
   font-weight: 100; }
 
 h3 {
   color: #888;
-  font-weight: bold; }
+  font-weight: 100; }
 
 pre {
   border-color: #ccc; }
@@ -284,11 +284,11 @@ blockquote {
     color: #888; }
 
 ::-moz-selection {
-  background: #c00;
+  background: #ff7e30;
   color: #fff; }
 
 ::selection {
-  background: #c00;
+  background: #ff7e30;
   color: #fff; }
 
 a, a:hover, a:focus, a:active, a:visited {
@@ -340,3 +340,9 @@ a:hover, a:focus {
   background: url(../images/logo.svg);
   background-size: 100% auto;
   z-index: 5; }
+
+.heart {
+  color: red;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .heart:before {
+    content: "\2665"; }
